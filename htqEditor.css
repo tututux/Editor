@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Simditor';
+    src: url("htqEditor.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.htqeditor
+{
+    border:1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.htqeditor_tools {
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    background:#f9f9f9;
+}
+
+.htqeditor_tools li {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.htqeditor_tools li a, .htqeditor_tools li a:link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: default;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 40px;
+}
+.htqeditor_tools li a:hover
+{
+    background:#eee;
+}
+
+.htqeditor_tools li a .htqeditor_icon {
+    font: normal normal normal 14px/1 'Simditor';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.htqeditor_icon_title:before {
+    content: 'H';
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+.htqeditor_icon_code:before {
+    content: '\f000';
+}
+
+.htqeditor_icon_bold:before {
+    content: '\f001';
+}
+
+.htqeditor_icon_italic:before {
+    content: '\f002';
+}
+
+.htqeditor_icon_underline:before {
+    content: '\f003';
+}
+
+.htqeditor_icon_times:before {
+    content: '\f004';
+}
+
+.htqeditor_icon_strikethrough:before {
+    content: '\f005';
+}
+
+.htqeditor_icon_ol:before {
+    content: '\f006';
+}
+
+.htqeditor_icon_ul:before {
+    content: '\f007';
+}
+
+.htqeditor_icon_blockquote:before {
+    content: '\f008';
+}
+
+.htqeditor_icon_table:before {
+    content: '\f009';
+}
+
+.htqeditor_icon_link:before {
+    content: '\f00a';
+}
+
+.htqeditor_icon_image:before {
+    content: '\f00b';
+}
+
+.htqeditor_icon_hr:before {
+    content: '\f00c';
+}
+
+.htqeditor_icon_indent:before {
+    content: '\f00d';
+}
+
+.htqeditor_icon_outdent:before {
+    content: '\f00e';
+}
+
+.htqeditor_icon_unlink:before {
+    content: '\f00f';
+}
+
+.htqeditor_icon_caret-down:before {
+    content: '\f010';
+}
+
+.htqeditor_icon_caret-right:before {
+    content: '\f011';
+}
+
+.htqeditor_icon_upload:before {
+    content: '\f012';
+}
+
+.htqeditor_icon_undo:before {
+    content: '\f013';
+}
+
+.htqeditor_icon_smile-o:before {
+    content: '\f014';
+}
+
+.htqeditor_icon_color:before {
+    content: '\f015';
+}
+
+.htqeditor_icon_font:before {
+    content: '\f016';
+}
+
+.htqeditor_icon_html5:before {
+    content: '\f017';
+}
+
+.htqeditor_icon_mark:before {
+    content: '\f018';
+}
+
+.htqeditor_icon_align_center:before {
+    content: '\f019';
+}
+
+.htqeditor_icon_align_left:before {
+    content: '\f01a';
+}
+
+.htqeditor_icon_align_right:before {
+    content: '\f01b';
+}
+
+.htqeditor_icon_font_minus:before {
+    content: '\f01c';
+}
+
+.htqeditor_icon_markdown:before {
+    content: '\f01d';
+}
+
+.htqeditor_icon_checklist:before {
+    content: '\f01e';
+}
+.active{
+    background: #e3e3e3;
+}
+
+.configbox{
+    position: absolute;
+    top:40px;
+    display: none;
+}
+.configbox ul{
+    padding: 0;
+    border-radius:5px;
+    background: #f9f9f9;
+    border:1px solid #e5e5e5;
+    display: flex;
+    flex-direction:column;
+}
+.configbox ul li{
+    padding: 0 20px;
+    line-height:45px;
+    text-align: center;
+
+}
+.configbox ul li:nth-child(even) {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.configbox ul li:hover{
+    background: #eee;
+}
+
+.font{
+    position: relative;
+}
+
+.fontsize ul .fontbig{
+    font-size: 32px;
+}
+.fontsize ul .fontmid{
+    font-size: 16px;
+  }
+.fontsize ul .fontsma{
+    font-size: 8px;
+}
+
+.color{
+    position: relative;
+}
+.fontcolor ul {
+    width:120px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.fontcolor ul li{
+    padding:0;
+    margin:5px;
+    width: 25px;
+    height: 25px;
+}
+.title{
+    position: relative
+}
+.htitle ul li:nth-child(1){
+    font-size:32px;
+}
+.htitle ul li:nth-child(2){
+    font-size:24px;
+}
+.htitle ul li:nth-child(3){
+    font-size:18px;
+}
+.htitle ul li:nth-child(4){
+    font-size:16px;
+}
+.htitle ul li:nth-child(5){
+    font-size:12px;
+}
